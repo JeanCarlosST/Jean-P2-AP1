@@ -58,8 +58,6 @@ C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\Jean-P2-AP
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\Jean-P2-AP1.dll
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\Jean-P2-AP1.pdb
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\Jean-P2-AP1.genruntimeconfig.cache
-C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Registro\r.g.cs
-C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Registro\r.baml
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\bin\Debug\netcoreapp3.1\Imagenes\add.png
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\bin\Debug\netcoreapp3.1\Imagenes\cancel.png
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\bin\Debug\netcoreapp3.1\Imagenes\delete.png
@@ -68,5 +66,7 @@ C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\bin\Debug\netcoreapp3.1\Imagenes\n
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\bin\Debug\netcoreapp3.1\Imagenes\save.png
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\bin\Debug\netcoreapp3.1\Imagenes\search.png
 C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\Jean-P2-AP1_Content.g.cs
-C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Consultas\c.g.cs
-C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Consultas\c.baml
+C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Consultas\cProyectos.g.cs
+C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Registro\rProyectos.g.cs
+C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Consultas\cProyectos.baml
+C:\Users\Jean Carlos\source\repos\Jean-P2-AP1\obj\Debug\netcoreapp3.1\UI\Registro\rProyectos.baml

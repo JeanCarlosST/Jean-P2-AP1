@@ -4,18 +4,18 @@
     <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="UI\Consultas\c.xaml.cs">
+    <Compile Update="UI\Consultas\cProyectos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UI\Registro\r.xaml.cs">
+    <Compile Update="UI\Registro\rProyectos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="UI\Consultas\c.xaml">
+    <Page Update="UI\Consultas\cProyectos.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UI\Registro\r.xaml">
+    <Page Update="UI\Registro\rProyectos.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -27,14 +27,14 @@ namespace Jean_P2_AP1
             InitializeComponent();
         }
 
-        public void rJugadores_Click(object sender, RoutedEventArgs e)
+        public void rProyectos_Click(object sender, RoutedEventArgs e)
         {
-            new r().Show();
+            new rProyectos().Show();
         }
 
-        public void cJugadores_Click(object sender, RoutedEventArgs e)
+        public void cProyectos_Click(object sender, RoutedEventArgs e)
         {
-            new c().Show();
+            new cProyectos().Show();
         }
     }
 }

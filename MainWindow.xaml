@@ -11,15 +11,11 @@
 
         <Menu VerticalAlignment="Top">
             <MenuItem Header="_Registros">
-                <MenuItem x:Name="rJugadoresMenuItem" Header="Registro de jugadores" Click="rJugadores_Click"/>
-                <MenuItem x:Name="r2MenuItem" Header="Registro de"/>
-                <MenuItem x:Name="r3MenuItem" Header="Registro de"/>
+                <MenuItem x:Name="rProyectosMenuItem" Header="Registro de proyectos" Click="rProyectos_Click"/>
             </MenuItem>
 
             <MenuItem Header="_Consultas">
-                <MenuItem x:Name="cJugadoresMenuItem" Header="Consulta de jugadores" Click="cJugadores_Click"/>
-                <MenuItem x:Name="c2MenuItem" Header="Consulta de"/>
-                <MenuItem x:Name="c3MenuItem" Header="Consulta de"/>
+                <MenuItem x:Name="cProyectosMenuItem" Header="Consulta de proyectos" Click="cProyectos_Click"/>
             </MenuItem>
         </Menu>
     </Grid>

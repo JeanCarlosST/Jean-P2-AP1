@@ -85,7 +85,7 @@ namespace Jean_P2_AP1.UI.Consultas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Jean-P2-AP1;component/ui/consultas/c.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Jean-P2-AP1;V1.0.0.0;component/ui/consultas/c.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\UI\Consultas\c.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -15,9 +15,9 @@ namespace Jean_P2_AP1.UI.Consultas
     /// <summary>
     /// Interaction logic for c.xaml
     /// </summary>
-    public partial class c : Window
+    public partial class cProyectos : Window
     {
-        public c()
+        public cProyectos()
         {
             InitializeComponent();
         }
