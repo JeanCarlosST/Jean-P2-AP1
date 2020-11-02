@@ -1,0 +1,46 @@
+﻿<Window x:Class="Jean_P2_AP1.UI.Consultas.c"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jean_P2_AP1.UI.Consultas"
+        mc:Ignorable="d"
+        Title="c" Height="500" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <!--Filtro-->
+            <StackPanel>
+                <Label Content="Filtro:"/>
+                <ComboBox x:Name="FiltroComboBox" Width="120">
+                    <ComboBoxItem Content="Id"/>
+                </ComboBox>
+            </StackPanel>
+
+            <!--Criterio-->
+            <StackPanel>
+                <Label Content="Criterio:"/>
+                <TextBox x:Name="CriterioTextBox" Width="230"/>
+            </StackPanel>
+
+            <Button x:Name="BuscarBoton" Width="85" Height="30" Click="ConsultarBoton_Click" BorderBrush="Black" Background="#FF02A5ED">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="18" Height="18" Source="/Imagenes/search.png"/>
+                    <Label Content="Buscar" Foreground="Black" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <DataGrid x:Name="DataGrid" Grid.Row="1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="---" Width="*" Binding="{Binding }"/>
+                <DataGridTextColumn Header="---" Width="*" Binding="{Binding }"/>
+                <DataGridTextColumn Header="---" Width="*" Binding="{Binding }"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
