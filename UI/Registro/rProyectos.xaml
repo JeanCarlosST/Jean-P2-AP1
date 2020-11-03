@@ -15,6 +15,7 @@
             <RowDefinition Height="55"/>
             <RowDefinition Height="80"/>
             <RowDefinition/>
+            <RowDefinition Height="35"/>
             <RowDefinition Height="45"/>
         </Grid.RowDefinitions>
 
@@ -91,10 +92,10 @@
                 </Grid>
                 
                 <!--DataGrid-->
-                <DataGrid x:Name="TareasDataGrid" Grid.Row="1" ItemsSource="{Binding Detalle}" AutoGenerateColumns="False" IsReadOnly="True" RowHeaderWidth="0"> 
+                <DataGrid x:Name="TareasDataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" RowHeaderWidth="0"> 
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="TipoId" Width=".25*" Binding="{Binding TipoId}"/>
-                        <DataGridTextColumn Header="Tipo Tarea" Width=".3*"/>
+                        <DataGridTextColumn Header="Tipo Tarea" Width=".3*" Binding="{Binding Tipo}"/>
                         <DataGridTextColumn Header="Requerimiento" Width="*" Binding="{Binding Requerimiento}"/>
                         <DataGridTextColumn Header="Tiempo" Width=".3*" Binding="{Binding Tiempo}"/>
                     </DataGrid.Columns>
@@ -109,6 +110,11 @@
                 </Button>
             </Grid>
         </GroupBox>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label Content="Tiempo total" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="TiempoTotalTextBox" IsReadOnly="True" Width="150" Height="22" Text="{Binding TiempoTotal}" HorizontalAlignment="Left"/>
+        </StackPanel>
 
         <!-- Botones inferiores -->
         <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30">

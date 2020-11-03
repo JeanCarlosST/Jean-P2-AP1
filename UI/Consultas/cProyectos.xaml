@@ -5,41 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jean_P2_AP1.UI.Consultas"
         mc:Ignorable="d"
-        Title="Consulta de proyectos" Height="500" Width="500">
-    <Grid>
+        Title="Consulta de proyectos" 
+        Height="500" Width="500"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+    
+    <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
             <!--Filtro-->
-            <StackPanel>
+            <StackPanel Grid.Column="0">
                 <Label Content="Filtro:"/>
-                <ComboBox x:Name="FiltroComboBox" Width="120">
-                    <ComboBoxItem Content="Id"/>
+                <ComboBox x:Name="FiltroComboBox" Width="120" HorizontalAlignment="Left">
+                    <ComboBoxItem Content="ProyectoId"/>
+                    <ComboBoxItem Content="Descripción"/>
+                    <ComboBoxItem Content="Tiempo"/>
                 </ComboBox>
             </StackPanel>
 
             <!--Criterio-->
-            <StackPanel>
+            <StackPanel Grid.Column="1" Margin="5,0,0,0">
                 <Label Content="Criterio:"/>
-                <TextBox x:Name="CriterioTextBox" Width="230"/>
+                <TextBox x:Name="CriterioTextBox" Width="260" Height="22" HorizontalAlignment="Left"/>
             </StackPanel>
 
-            <Button x:Name="BuscarBoton" Width="85" Height="30" Click="ConsultarBoton_Click" BorderBrush="Black" Background="#FF02A5ED">
+            <Button x:Name="BuscarBoton" Grid.Column="2" Width="85" Height="30" Margin="5,0,0,0" VerticalAlignment="Bottom" Click="ConsultarBoton_Click" BorderBrush="Black" Background="#FF02A5ED">
                 <StackPanel Orientation="Horizontal">
                     <Image Width="18" Height="18" Source="/Imagenes/search.png"/>
                     <Label Content="Buscar" Foreground="Black" FontWeight="Bold"/>
                 </StackPanel>
             </Button>
-        </StackPanel>
+        </Grid>
 
-        <DataGrid x:Name="DataGrid" Grid.Row="1" AutoGenerateColumns="False">
+        <DataGrid x:Name="ProyectosDataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,5,0,0" RowHeaderWidth="0">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="---" Width="*" Binding="{Binding }"/>
-                <DataGridTextColumn Header="---" Width="*" Binding="{Binding }"/>
-                <DataGridTextColumn Header="---" Width="*" Binding="{Binding }"/>
+                <DataGridTextColumn Header="ProyectoId" Width=".4*" Binding="{Binding ProyectoId}"/>
+                <DataGridTextColumn Header="Fecha" Width=".65*" Binding="{Binding Fecha}"/>
+                <DataGridTextColumn Header="Descripción" Width="*" Binding="{Binding Descripcion}"/>
+                <DataGridTextColumn Header="Tiempo" Width=".3*" Binding="{Binding TiempoTotal}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

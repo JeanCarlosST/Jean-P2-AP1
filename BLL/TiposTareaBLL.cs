@@ -11,6 +11,28 @@ namespace Jean_P2_AP1.BLL
 {
     public class TiposTareaBLL
     {
+        public static TiposTarea Buscar(int id)
+        {
+            Contexto context = new Contexto();
+            TiposTarea producto;
+
+            try
+            {
+                producto = context.TiposTarea
+                    .Where(t => t.TipoId == id)
+                    .SingleOrDefault();
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                context.Dispose();
+            }
+
+            return producto;
+        }
         public static List<TiposTarea> ObtenerLista(Expression<Func<TiposTarea, bool>> criterio)
         {
             List<TiposTarea> lista = new List<TiposTarea>();
